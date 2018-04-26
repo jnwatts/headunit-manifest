@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="yocto" fetch="git://git.yoctoproject.org" />
+	<remote name="oe" fetch="git://git.openembedded.org" />
+	<remote name="gh" fetch="https://github.com" />
+
+	<project path="headunit" remote="gh" name="jnwatts/headunit" revision="master" />
+
+	<project path="poky" remote="yocto" name="poky" revision="rocko" />
+	<project path="poky/meta-raspberrypi" remote="yocto" name="meta-raspberrypi" revision="rocko" />
+	<project path="poky/meta-security" remote="yocto" name="meta-security" revision="rocko" />
+	<project path="poky/meta-openembedded" remote="oe" name="meta-openembedded" revision="rocko" />
+	<project path="poky/meta-qt5" remote="gh" name="meta-qt5/meta-qt5" revision="rocko" />
+	<project path="poky/meta-rpi" remote="gh" name="jumpnow/meta-rpi" revision="rocko" />
+</manifest>
