@@ -3,13 +3,15 @@
 	<remote name="yocto" fetch="git://git.yoctoproject.org" />
 	<remote name="oe" fetch="git://git.openembedded.org" />
 	<remote name="gh" fetch="https://github.com" />
+	<remote name="qt" fetch="git://code.qt.io" />
 
 	<project path="headunit" remote="gh" name="jnwatts/headunit" revision="master" />
 
-	<project path="poky" remote="yocto" name="poky" revision="rocko" />
-	<project path="poky/meta-raspberrypi" remote="yocto" name="meta-raspberrypi" revision="rocko" />
-	<project path="poky/meta-security" remote="yocto" name="meta-security" revision="rocko" />
-	<project path="poky/meta-openembedded" remote="oe" name="meta-openembedded" revision="rocko" />
-	<project path="poky/meta-qt5" remote="gh" name="meta-qt5/meta-qt5" revision="rocko" />
-	<project path="poky/meta-rpi" remote="gh" name="jumpnow/meta-rpi" revision="rocko" />
+	<project path="poky" remote="yocto" name="poky" revision="pyro" />
+	<project path="poky/meta-raspberrypi" remote="yocto" name="meta-raspberrypi" revision="pyro" />
+	<project path="poky/meta-security" remote="yocto" name="meta-security" revision="pyro" />
+	<project path="poky/meta-openembedded" remote="oe" name="meta-openembedded" revision="pyro" />
+	<project path="poky/meta-qt5" remote="gh" name="meta-qt5/meta-qt5" revision="pyro" />
+	<project path="poky/meta-boot2qt" remote="qt" name="yocto/meta-boot2qt" revision="pyro" />
+	<!-- <project path="poky/meta-rpi" remote="gh" name="jumpnow/meta-rpi" revision="pyro" /> -->
 </manifest>
